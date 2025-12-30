@@ -1,0 +1,37 @@
+{
+  "java.project.referencedLibraries": ["lib/*.jar"],
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "xprotocol",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "192.168.235.173",
+      "port": 33060,
+      "driver": "MySQL",
+      "name": "SoftEngRemote",
+      "database": "lavega_store_db",
+      "username": "root",
+      "password": "root",
+      "connectionTimeout": 30
+    },
+    {
+      "mysqlOptions": {
+        "authProtocol": "xprotocol",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 33060,
+      "driver": "MySQL",
+      "name": "MyConnection",
+      "database": "lavega_store_db",
+      "username": "root",
+      "password": "root",
+      "connectionTimeout": 30
+    }
+  ],
+  "java.debug.settings.onBuildFailureProceed": true,
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable"
+}
